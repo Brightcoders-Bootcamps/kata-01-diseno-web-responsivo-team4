@@ -1,0 +1,144 @@
+/* Globales */
+
+/*Primary*/
+$cyan:hsl(180, 66%, 49%);
+$DarkViolet: hsl(257, 27%, 26%);
+/*Secondary*/
+$Red: hsl(0, 87%, 67%);
+/*Neutral*/
+$Gray: hsl(0, 0%, 75%);
+$GrayishViolet: hsl(257, 7%, 63%);
+$VeryDarkBlue: hsl(255, 11%, 22%);
+$VeryDarkViolet: hsl(260, 8%, 14%);
+
+
+// .attribution { 
+//     font-size: 11px; text-align: center; 
+//     a { 
+//         color: hsl(228, 45%, 44%); 
+//     }
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+
+/*  Mobile  */
+@media (min-width:0px){
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.menu {
+    margin: 30px 20px 0px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menuhr {
+    width: 80%;
+}
+
+.hidden {
+    display: none
+}
+
+.menu a {
+    font-size: 15px;
+    display: block;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: grey;
+    margin-top: -28px;
+}
+
+.menu svg:focus{
+    background-color: none;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.active {
+    color: red;
+}
+
+.menu_options {
+    background-color: blue;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.btn-login {
+    margin-left: 5%;
+    padding: 2% 30%;
+    margin-bottom: 50px; 
+} 
+
+.btn-menu {
+    background-color: $cyan;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 100px 100px 100px 100px;
+    border: none;
+}
+
+.btn-menu:hover {
+    opacity: 0.5;
+}
+
+
+
+
+}
+
+
+/*  Escritorio  */
+@media (min-width:800px){
+     
+    hr, #btnBurger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 10px;
+        margin: 30px 20px 0px 150px;
+    }
+
+    #menu_end{
+        margin-left: 350px;
+        display: flex;
+    }
+
+    .menu_options{
+        display: flex;
+        background-color: white;   
+    }
+}
+
+
+/*Footer */
+
+.contacto{
+    text-align:center;
+}
+.contacto .imagenes img{
+    width: 50px;
+    height: 50px;
+}

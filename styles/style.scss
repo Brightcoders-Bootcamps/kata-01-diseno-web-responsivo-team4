@@ -48,6 +48,20 @@ body{
         padding: 20px;
         text-decoration: none;
     }
+    a.icon{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: grey;
+        margin-top: -23px;
+    }
+    svg:focus{
+        background-color: none;
+    }
+    a:hover {
+        color: black;
+    }
 }
 
 .menuhr {
@@ -56,23 +70,6 @@ body{
 
 .hidden {
     display: none
-}
-
-.menu a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: grey;
-    margin-top: -23px;
-}
-
-.menu svg:focus{
-    background-color: none;
-}
-
-.menu a:hover {
-    color: black;
 }
 
 .active {

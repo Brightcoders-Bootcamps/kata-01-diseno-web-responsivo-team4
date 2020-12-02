@@ -2,15 +2,14 @@
 
 /*Primary*/
 $cyan:hsl(180, 66%, 49%);
-$DarkViolet: hsl(257, 27%, 26%);
+$DarkViolet:hsl(257, 27%, 26%);
 /*Secondary*/
-$Red: hsl(0, 87%, 67%);
+$Red:hsl(0, 87%, 67%);
 /*Neutral*/
 $Gray: hsl(0, 0%, 75%);
 $GrayishViolet: hsl(257, 7%, 63%);
 $VeryDarkBlue: hsl(255, 11%, 22%);
 $VeryDarkViolet: hsl(260, 8%, 14%);
-
 
 // .attribution { 
 //     font-size: 11px; text-align: center; 
@@ -19,7 +18,12 @@ $VeryDarkViolet: hsl(260, 8%, 14%);
 //     }
 // }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
 
 
 /*  Mobile  */
@@ -100,8 +104,16 @@ body{
     opacity: 0.5;
 }
 
+/*Footer */
 
-
+.contacto{
+    background-color: red;
+    text-align:center;
+}
+.contacto .imagenes img{
+    width: 50px;
+    height: 50px;
+}
 
 }
 
@@ -130,15 +142,25 @@ body{
         display: flex;
         background-color: white;   
     }
+
+    .menu a{
+        padding: 15px 15px;
+        text-decoration: none;
+        display: inline-block;
+        color: grey;
+        text-align: center;
+    }
+
+    .menu a:hover{
+        color: black;
+    }
+
+    .btn-sign { 
+        padding: 10px 25px;
+        margin-left: 0%;
+        margin-bottom: 0px;
+        font-size: 15px;
+      }
 }
 
 
-/*Footer */
-
-.contacto{
-    text-align:center;
-}
-.contacto .imagenes img{
-    width: 50px;
-    height: 50px;
-}

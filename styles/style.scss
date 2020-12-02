@@ -18,7 +18,7 @@ $VeryDarkViolet: hsl(260, 8%, 14%);
 //     }
 // }
 
-// @import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -38,6 +38,16 @@ body{
     margin: 30px 20px 0px 20px;
     overflow: hidden;
     position: relative;
+    a {
+        font-size: 18px;
+        font-weight: 700;
+        display: block;
+        color: white;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        text-decoration: none;
+    }
 }
 
 .menuhr {
@@ -48,23 +58,13 @@ body{
     display: none
 }
 
-.menu a {
-    font-size: 15px;
-    display: block;
-    color: white;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    text-decoration: none;
-}
-
 .menu a.icon {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     color: grey;
-    margin-top: -28px;
+    margin-top: -23px;
 }
 
 .menu svg:focus{
@@ -80,14 +80,14 @@ body{
 }
 
 .menu_options {
-    background-color: blue;
+    background-color: $DarkViolet;
     border-radius: 10px 10px 10px 10px;
 }
 
 .btn-login {
-    margin-left: 5%;
+    margin-left: 13%;
     padding: 2% 30%;
-    margin-bottom: 50px; 
+    margin-bottom: 30px; 
 } 
 
 .btn-menu {
@@ -96,7 +96,7 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: white;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 90px 90px 90px 90px;
     border: none;
 }
 
@@ -131,35 +131,37 @@ body{
         align-items: center;
         padding: 10px 10px;
         margin: 30px 20px 0px 150px;
+        a{
+            padding: 15px 15px;
+            text-decoration: none;
+            display: inline-block;
+            color: grey;
+            text-align: center;
+        }
     }
 
     #menu_end{
-        margin-left: 350px;
+        margin-left: 290px;
         display: flex;
     }
 
     .menu_options{
         display: flex;
-        background-color: white;   
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;   
     }
 
-    .menu a{
-        padding: 15px 15px;
-        text-decoration: none;
-        display: inline-block;
-        color: grey;
-        text-align: center;
-    }
 
     .menu a:hover{
         color: black;
     }
 
-    .btn-sign { 
+    .btn-login { 
         padding: 10px 25px;
         margin-left: 0%;
         margin-bottom: 0px;
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: 700;
       }
 }
 

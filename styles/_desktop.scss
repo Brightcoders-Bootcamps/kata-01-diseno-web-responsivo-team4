@@ -1,0 +1,46 @@
+/*  Escritorio  */
+@media (min-width:800px){
+     
+    hr, #btnBurger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 10px;
+        margin: 30px 20px 0px 150px;
+        a{
+            padding: 15px 15px;
+            text-decoration: none;
+            display: inline-block;
+            color: grey;
+            text-align: center;
+        }
+    }
+
+    #menu_end{
+        margin-left: 290px;
+        display: flex;
+    }
+
+    .menu_options{
+        display: flex;
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;   
+    }
+
+
+    .menu a:hover{
+        color: black;
+    }
+
+    .btn-login { 
+        padding: 10px 25px;
+        margin-left: 0%;
+        margin-bottom: 0px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+}

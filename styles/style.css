@@ -143,6 +143,93 @@ body {
     color: white;
     position: absolute;
   }
+  /* form */
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .form_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("../images/bg-shorten-mobile.svg");
+    background-color: #232127;
+    background-position: 60px -60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 9px;
+    z-index: 1;
+  }
+  .input_shorten {
+    width: 280px;
+    height: 39px;
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+  input {
+    padding-left: 10px;
+  }
+  input::-webkit-input-placeholder {
+    padding-left: 10px;
+    color: #bfbfbf;
+    font-weight: 600;
+  }
+  input:-ms-input-placeholder {
+    padding-left: 10px;
+    color: #bfbfbf;
+    font-weight: 600;
+  }
+  input::-ms-input-placeholder {
+    padding-left: 10px;
+    color: #bfbfbf;
+    font-weight: 600;
+  }
+  input::placeholder {
+    padding-left: 10px;
+    color: #bfbfbf;
+    font-weight: 600;
+  }
+  input, input[focus] {
+    outline: none;
+  }
+  .button_shorten {
+    margin-top: 13px;
+    background-color: #2acfcf;
+    border-radius: 6px;
+    border: none;
+    padding: 6%;
+    width: 290px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+  }
   /*Footer */
   .contacto {
     background-color: red;

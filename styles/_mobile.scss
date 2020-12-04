@@ -2,7 +2,7 @@
 @media (max-width:375px){
 
     body{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif !important;
         margin: 0;
     }
     
@@ -54,7 +54,7 @@
     }
     
     .btn-login {
-        margin-left: 13%;
+        margin-left: 8%;
         padding: 2% 30%;
         margin-bottom: 30px; 
     } 
@@ -132,6 +132,57 @@
             }
         }
     }
+
+    /* Cards */
+
+    #card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $BackCards;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+
+    #card1 {
+        text-align: center;
+        padding: 70px 20px 50px 20px;
+        h1{
+            font-weight: 700;
+            color: $VeryDarkViolet;
+        }
+        h5{
+            font-weight: 500;
+            font-size: 18px;
+            color: $GrayishViolet;
+        }
+    }
+
+    #card2 {
+        text-align: center;
+        padding: 20px 20px 50px 20px;
+        background-color: white;
+        width: 80%;
+        height: 250px;
+        h1{
+            font-weight: 700;
+            color: $VeryDarkViolet;
+        }
+        h5{
+            font-weight: 400;
+            font-size: 18px;
+            color: $GrayishViolet;
+        }
+    }
+
+    #img1{
+            width: 50px;
+            height: 50px;
+            border-radius: 60%;
+            background-color: $DarkViolet;
+    }
+
+
     
     /*Footer */
     

@@ -48,8 +48,52 @@
 //footer
 .down-footer{
     flex-direction: row;
-    align-content: space-around;
+    padding: 5% 5% 5% 5%;
+    div{
+        padding-right: 10%;
+    }
+    .test{
+        width: 100%;
+
+    .imagenes{
+        
+        float: left;
+
+    
+        img{
+            padding-bottom: 10%;
+            float: right;
+            //background-color: cyan;
+
+        }
+
+    }
+}
 }
 
+.down-footer .logofooter{ //quita el logo
+    display: none;
+}
+
+.up-footer{
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+   
+    padding: 5% 0 5% 0;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+
+    .up-footer-contenedor{
+        //background-color: darkgreen;
+        justify-content: left;
+        align-items: left;
+    }
+
+}
 
 }

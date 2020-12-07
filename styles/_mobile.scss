@@ -1,5 +1,7 @@
 /*  Mobile  */
-@media (min-width:0px){
+
+@media (max-width:375px){
+
 
     body{
         font-family: 'Poppins', sans-serif;
@@ -72,8 +74,69 @@
     .btn-menu:hover {
         opacity: 0.5;
     }
+
+
+    /* Components header */
+    .banner_img {
+        background-image: url('../images/illustration-working.svg');
+        background-position: 20px 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 308px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &_title_fst {
+            font-size: 42px;
+            font-weight: bold;
+            color: $VeryDarkBlue;
+            margin-top: 8%;
+            margin-bottom: 3%;
+        }
+
+        &_title_scd {
+            font-size: 42px;
+            font-weight: bold;
+            color: $VeryDarkBlue;
+            margin-top: -5%;
+            margin-bottom: -3%;
+        }
+
+        &_text {
+            text-align: center;
+            color: $Gray;
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        &_button {
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            float: left;
+            background-color: $cyan;
+            border-radius: 90px 90px 90px 90px;
+            border: none;
+            padding: 13% 30%;
+            width: 186px;
+            z-index: 1;
+
+            &_text {
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                position: absolute;
+            }
+        }
+    }
     
-    /*Footer */
+       /*Footer */
 
     .down-footer{
         background-color: $VeryDarkViolet;
@@ -146,5 +209,6 @@
        
     }
     
+    
 
-    }
+    

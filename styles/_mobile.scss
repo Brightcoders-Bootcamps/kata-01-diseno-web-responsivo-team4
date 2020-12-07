@@ -1,11 +1,10 @@
 /*  Mobile  */
-@media (max-width:375px){
-
-    body{
-        font-family: 'Poppins', sans-serif !important;
+@media (max-width: 375px) {
+    body {
+        font-family: "Poppins", sans-serif !important;
         margin: 0;
     }
-    
+
     .menu {
         margin: 30px 20px 0px 20px;
         overflow: hidden;
@@ -20,7 +19,7 @@
             padding: 20px;
             text-decoration: none;
         }
-        a.icon{
+        a.icon {
             display: block;
             position: absolute;
             right: 0;
@@ -28,37 +27,37 @@
             color: grey;
             margin-top: -23px;
         }
-        svg:focus{
+        svg:focus {
             background-color: none;
         }
         a:hover {
             color: black;
         }
     }
-    
+
     .menuhr {
         width: 80%;
     }
-    
+
     .hidden {
-        display: none
+        display: none;
     }
-    
+
     .active {
         color: red;
     }
-    
+
     .menu_options {
         background-color: $DarkViolet;
         border-radius: 10px 10px 10px 10px;
     }
-    
+
     .btn-login {
         margin-left: 8%;
         padding: 2% 30%;
-        margin-bottom: 30px; 
-    } 
-    
+        margin-bottom: 30px;
+    }
+
     .btn-menu {
         background-color: $cyan;
         text-decoration: none;
@@ -68,14 +67,14 @@
         border-radius: 90px 90px 90px 90px;
         border: none;
     }
-    
+
     .btn-menu:hover {
         opacity: 0.5;
     }
 
     /* Components header */
     .banner_img {
-        background-image: url('../images/illustration-working.svg');
+        background-image: url("../images/illustration-working.svg");
         background-position: 20px 0;
         background-repeat: no-repeat;
         background-size: cover;
@@ -114,7 +113,7 @@
 
         &_button {
             display: flex;
-            align-items: center; 
+            align-items: center;
             justify-content: center;
             float: left;
             background-color: $cyan;
@@ -148,7 +147,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url('../images/bg-shorten-mobile.svg');
+        background-image: url("../images/bg-shorten-mobile.svg");
         background-color: $VeryDarkViolet;
         background-position: 60px -60px;
         background-repeat: no-repeat;
@@ -165,7 +164,6 @@
         height: 39px;
         border: 1px solid black;
         border-radius: 6px;
-
     }
 
     input {
@@ -178,7 +176,8 @@
         font-weight: 600;
     }
 
-    input, input[focus] {
+    input,
+    input[focus] {
         outline: none;
     }
 
@@ -194,7 +193,7 @@
         font-size: 16px;
         outline: none;
     }
-    
+
     /* Cards */
 
     #card {
@@ -209,11 +208,11 @@
     #card1 {
         text-align: center;
         padding: 70px 20px 50px 20px;
-        h1{
+        h1 {
             font-weight: 700;
             color: $VeryDarkViolet;
         }
-        h5{
+        h5 {
             font-weight: 500;
             font-size: 18px;
             color: $GrayishViolet;
@@ -231,12 +230,13 @@
         height: calc(90% - 30px);
         //margin-bottom: 80px;
 
-        h1{
+        h1 {
             font-weight: 700;
             color: $VeryDarkViolet;
             margin-top: 40px;
         }
-        h5{
+
+        h5 {
             font-weight: 400;
             font-size: 18px;
             color: $GrayishViolet;
@@ -245,7 +245,7 @@
 
     .circle_card {
         display: flex;
-        align-items: center; 
+        align-items: center;
         justify-content: center;
         background-color: $DarkViolet;
         position: absolute;
@@ -257,20 +257,79 @@
         border-radius: 50%;
     }
 
-    #img1{
+    #img1 {
         width: 40px;
-        height: 40px;   
+        height: 40px;
     }
 
     /*Footer */
-    
-    .contacto{
-        background-color: red;
-        text-align:center;
+
+    .down-footer {
+        background-color: $VeryDarkViolet;
+        display: flex;
+        flex-direction: column;
+
+        padding: 10% 0 10% 0;
+        text-align: center;
+
+        a:hover {
+            color: red;
+        }
+
+        .logofooter {
+            filter: hue-rotate(100deg) brightness(1000%);
+            align-self: center;
+        }
+
+        div p {
+            color: $Gray;
+            margin: 1%;
+        }
+
+        /*Footer */
+
+        .contacto {
+            background-color: red;
+            text-align: center;
+        }
+        .contacto .imagenes img {
+            width: 50px;
+            height: 50px;
+        }
     }
-    .contacto .imagenes img{
-        width: 50px;
-        height: 50px;
+    .imagenes {
+        //background-color: lightgreen;
+        padding-top: 10%;
+        width: 100%;
+
+        img {
+            flex: auto;
+            margin: 0 5% 0 0;
+            //background-color: red;
+            height: 80%;
+        }
+        :hover {
+            //pendiente - cambiar colores
+            //blalbalba
+            color: red;
+        }
     }
-    
+}
+
+.up-footer {
+    background-color: $DarkViolet;
+    background-image: url(../images/bg-boost-mobile.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0 10% 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+
+    button {
+        padding: 2% 30%;
+        margin-bottom: 30px;
     }
+}

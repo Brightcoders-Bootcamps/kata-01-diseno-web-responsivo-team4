@@ -89,7 +89,7 @@ body {
     text-align: center;
   }
   .down-footer a:hover {
-    color: red;
+    color: #2acfcf;
   }
   .down-footer .logofooter {
     -webkit-filter: hue-rotate(100deg) brightness(1000%);

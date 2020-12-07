@@ -1,5 +1,7 @@
 /*  Mobile  */
+
 @media (max-width:375px){
+
 
     body{
         font-family: 'Poppins', sans-serif;
@@ -73,6 +75,7 @@
         opacity: 0.5;
     }
 
+
     /* Components header */
     .banner_img {
         background-image: url('../images/illustration-working.svg');
@@ -133,15 +136,79 @@
         }
     }
     
-    /*Footer */
+       /*Footer */
+
+    .down-footer{
+        background-color: $VeryDarkViolet;
+        display: flex;
+        flex-direction: column;
+        
+        padding: 10% 0 10% 0;
+        text-align: center;
+
+        a:hover{
+            color: red;
+        }
+
+        .logofooter{
+            filter:hue-rotate(100deg) brightness(1000%);
+            align-self: center;
+            }
+
+
+        div p{
+            color:$Gray;
+            margin: 1%;
+
+           
+        }
+        div p:first-child{
+            padding: 10px 0 10px 0;
+            color:white;
+            font-weight: bold;
+        }
+
+        .imagenes{
+
+            //background-color: lightgreen;
+            padding-top: 10%;
+            width: 100%;
+            
+            
+            img{
+                flex: auto;
+                margin: 0 5% 0 0;
+                //background-color: red;
+                height: 80%;
+                
+            }
+            :hover{ //pendiente - cambiar colores
+               //blalbalba
+               color:red;
+            }
+        }
+    }
+
+    .up-footer{
+        background-color: $DarkViolet;
+        background-image: url(../images/bg-boost-mobile.svg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0 10% 0;
+        text-align: center;
+        color:white;
+        font-weight: bolder;
+
+        button{
+            padding: 2% 30%;
+            margin-bottom: 30px; 
+        }
+       
+       
+    }
     
-    .contacto{
-        background-color: red;
-        text-align:center;
-    }
-    .contacto .imagenes img{
-        width: 50px;
-        height: 50px;
-    }
     
-    }
+
+    

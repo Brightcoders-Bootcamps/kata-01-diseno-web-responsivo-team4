@@ -240,9 +240,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -337,23 +334,26 @@ body {
     color: #bfbfbf;
     margin: 1%;
   }
-  .down-footer div p:first-child {
-    padding: 10px 0 10px 0;
-    color: white;
-    font-weight: bold;
+  .down-footer .contacto {
+    background-color: red;
+    text-align: center;
   }
-  .down-footer .imagenes {
+  .down-footer .contacto .imagenes img {
+    width: 50px;
+    height: 50px;
+  }
+  .imagenes {
     padding-top: 10%;
     width: 100%;
   }
-  .down-footer .imagenes img {
+  .imagenes img {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
     margin: 0 5% 0 0;
     height: 80%;
   }
-  .down-footer .imagenes :hover {
+  .imagenes :hover {
     color: red;
   }
   .up-footer {
@@ -431,7 +431,6 @@ body {
     margin-bottom: 0px;
     font-size: 18px;
     font-weight: 700;
-
   }
   .down-footer {
     -webkit-box-orient: horizontal;

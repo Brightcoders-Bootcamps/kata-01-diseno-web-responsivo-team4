@@ -297,8 +297,9 @@
         padding: 10% 0 10% 0;
         text-align: center;
 
-        a:hover {
-            color: red;
+        a:hover{
+            color: hsl(180, 66%, 49%);
+
         }
 
         .logofooter {
@@ -306,12 +307,19 @@
             align-self: center;
         }
 
-        div p {
-            color: $Gray;
-            margin: 1%;
 
+        div a{
+            color:$Gray;
+            
+            line-height: 30px;
            
         }
+        div p{
+            padding: 10px 0 10px 0;
+            color:white;
+            font-weight: bold;
+        }
+]
 
         /*Footer */
       
@@ -359,4 +367,8 @@
             margin-bottom: 30px;
         }
     }
-}
+
+    
+
+    }
+

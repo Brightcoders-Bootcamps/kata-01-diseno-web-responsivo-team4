@@ -314,22 +314,22 @@
             color: red;
         }
     }
-}
 
-.up-footer {
-    background-color: $DarkViolet;
-    background-image: url(../images/bg-boost-mobile.svg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 0 10% 0;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-
-    button {
-        padding: 2% 30%;
-        margin-bottom: 30px;
+    .up-footer {
+        background-color: $DarkViolet;
+        background-image: url(../images/bg-boost-mobile.svg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0 10% 0;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+    
+        button {
+            padding: 2% 30%;
+            margin-bottom: 30px;
+        }
     }
 }

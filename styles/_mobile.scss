@@ -111,7 +111,11 @@
             margin-bottom: 6px;
         }
 
-        &_button {
+        .banner_text_btn {
+            margin-left: 25%;
+        }
+
+        .banner_button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -119,7 +123,7 @@
             background-color: $cyan;
             border-radius: 90px 90px 90px 90px;
             border: none;
-            padding: 13% 30%;
+            padding: 11% 30%;
             width: 186px;
             z-index: 1;
 

@@ -142,7 +142,6 @@
         background-color: $VeryDarkViolet;
         display: flex;
         flex-direction: column;
-        
         padding: 10% 0 10% 0;
         text-align: center;
 
@@ -156,13 +155,13 @@
             }
 
 
-        div p{
+        div a{
             color:$Gray;
-            margin: 1%;
-
+            
+            line-height: 30px;
            
         }
-        div p:first-child{
+        div p{
             padding: 10px 0 10px 0;
             color:white;
             font-weight: bold;
@@ -209,6 +208,5 @@
        
     }
     
-    
-}
-    
+
+    }

@@ -119,7 +119,10 @@ body {
     font-size: 19px;
     margin-bottom: 6px;
   }
-  .banner_button {
+  .banner .banner_text_btn {
+    margin-left: 25%;
+  }
+  .banner .banner_button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -133,11 +136,11 @@ body {
     background-color: #2acfcf;
     border-radius: 90px 90px 90px 90px;
     border: none;
-    padding: 13% 30%;
+    padding: 11% 30%;
     width: 186px;
     z-index: 1;
   }
-  .banner_button_text {
+  .banner .banner_button_text {
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -448,6 +451,70 @@ body {
     margin-bottom: 0px;
     font-size: 18px;
     font-weight: 700;
+  }
+  /* Components header */
+  .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-top: 5%;
+  }
+  .banner_title_fst {
+    font-size: 42px;
+    font-weight: bold;
+    color: #35323e;
+    margin-top: 8%;
+    margin-bottom: 1%;
+  }
+  .banner_title_scd {
+    font-size: 42px;
+    font-weight: bold;
+    color: #35323e;
+    margin-top: -5%;
+    margin-bottom: -3%;
+  }
+  .banner_text {
+    color: #9e9aa7;
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+  .banner_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #2acfcf;
+    border-radius: 90px 90px 90px 90px;
+    border: none;
+    padding: 13% 30%;
+    width: 186px;
+    z-index: 1;
+  }
+  .banner_button_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+  }
+  .banner_img {
+    background-image: url("../images/illustration-working.svg");
+    background-position: 90px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
   }
   .down-footer {
     -webkit-box-orient: horizontal;

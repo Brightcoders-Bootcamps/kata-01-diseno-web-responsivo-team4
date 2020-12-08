@@ -656,12 +656,19 @@ body {
   #card2 h1 {
     font-weight: 700;
     color: #232127;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: -20px;
   }
   #card2 h5 {
     font-weight: 400;
     font-size: 18px;
     color: #9e9aa7;
+  }
+  .center_card {
+    margin-top: 30px !important;
+  }
+  .last_card {
+    margin-top: 60px !important;
   }
   .circle_card {
     display: -webkit-box;

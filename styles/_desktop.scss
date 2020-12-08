@@ -209,7 +209,8 @@
         h1 {
             font-weight: 700;
             color: $VeryDarkViolet;
-            margin-top: 40px;
+            margin-top: 50px;
+            margin-bottom: -20px;
         }
 
         h5 {
@@ -217,6 +218,14 @@
             font-size: 18px;
             color: $GrayishViolet;
         }
+    }
+
+    .center_card {
+        margin-top: 30px !important;
+    }
+
+    .last_card {
+        margin-top: 60px !important;
     }
 
     .circle_card {

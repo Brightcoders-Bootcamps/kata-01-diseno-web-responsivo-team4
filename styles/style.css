@@ -610,13 +610,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: #EFF1F7;
     padding-bottom: 30px;
     -webkit-box-pack: center;
@@ -624,23 +619,35 @@ body {
             justify-content: center;
   }
   #card1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
     text-align: center;
-    padding: 70px 20px 50px 20px;
+    padding: 70px 20px 70px 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #card1 h1 {
     font-weight: 700;
+    font-size: 32px;
     color: #232127;
+    margin-bottom: -20px;
   }
   #card1 h5 {
+    display: inline-block;
     font-weight: 500;
     font-size: 18px;
     color: #9e9aa7;
+    width: 36%;
   }
   #card2 {
-    text-align: center;
     position: relative;
     background-color: white;
-    width: calc(90% - 30px);
+    width: calc(26% - 30px);
     padding: 10px;
     border-radius: 6px;
     margin: 0px;
@@ -669,16 +676,16 @@ body {
     background-color: #3b3054;
     position: absolute;
     z-index: 1;
-    left: 50%;
+    left: 18%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
   }
   #img1 {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .card_separator {
     display: -webkit-box;
@@ -692,8 +699,8 @@ body {
             justify-content: center;
   }
   .card_separator_line {
-    width: 9px;
-    height: 75px;
+    width: 19px;
+    height: 12px;
     background-color: #2acfcf;
   }
   .down-footer {

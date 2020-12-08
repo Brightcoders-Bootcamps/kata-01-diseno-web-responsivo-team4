@@ -470,6 +470,9 @@ body {
   .btn-login:hover {
     background-color: #80deea;
   }
+  .button_shorten:hover {
+    background-color: #80deea;
+  }
   /* Components header */
   .banner {
     display: -webkit-box;
@@ -521,6 +524,9 @@ body {
     padding: 6% 19%;
     width: 186px;
     z-index: 1;
+  }
+  .banner_button:hover{
+    background-color: #80deea;
   }
   .banner_button_text {
     font-size: 18px;

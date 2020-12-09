@@ -263,7 +263,7 @@ body {
   }
   .card_links {
     background-color: white;
-    width: calc(81% - 30px);
+    width: calc(93% - 30px);
     padding: 10px;
     border-radius: 6px;
     margin: 0px;
@@ -274,27 +274,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 3;
-        -ms-flex-positive: 3;
-            flex-grow: 3;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .card_links_original {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 68%;
             flex: 0 0 68%;
-    margin-left: 20px;
-    margin-right: 20px;
   }
   .card_links_short {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 15%;
-            flex: 0 0 15%;
-    margin-right: 6px;
     color: #2acfcf;
   }
   .card_links_btn {
@@ -308,8 +299,8 @@ body {
     background-color: #2acfcf;
     border-radius: 6px;
     border: none;
-    padding: 9%;
-    width: 119px;
+    padding: 4%;
+    width: 19rem;
     color: white;
     font-weight: bold;
     font-size: 16px;

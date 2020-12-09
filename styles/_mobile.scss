@@ -219,7 +219,7 @@
 
     .card_links {
         background-color: white;
-        width: calc(81% - 30px);
+        width: calc(93% - 30px);
         padding: 10px;
         border-radius: 6px;
         margin: 0px;
@@ -228,20 +228,15 @@
 
         &_content {
             display: flex;
-            flex-direction: row;
-            flex-grow: 3;
+            flex-direction: column;
             width: 100%;
         }
 
         &_original {
             flex: 0 0 68%;
-            margin-left: 20px;
-            margin-right: 20px;
         }
 
         &_short {
-            flex: 0 0 15%;
-            margin-right: 6px;
             color: $cyan;
         }
 
@@ -254,8 +249,8 @@
                 background-color: $cyan;
                 border-radius: 6px;
                 border: none;
-                padding: 9%;
-                width: 119px;
+                padding: 4%;
+                width: 19rem;
                 color: white;
                 font-weight: bold;
                 font-size: 16px;

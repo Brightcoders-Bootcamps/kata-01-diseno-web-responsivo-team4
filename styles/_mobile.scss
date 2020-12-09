@@ -207,6 +207,67 @@
         font-style: oblique;
     }
 
+    /* Card result links */
+    
+    #contentResult{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: $BackCards;
+    }
+
+    .card_links {
+        background-color: white;
+        width: calc(81% - 30px);
+        padding: 10px;
+        border-radius: 6px;
+        margin: 0px;
+        height: calc(90% - 30px);
+        margin-top: 30px;
+
+        &_content {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 3;
+            width: 100%;
+        }
+
+        &_original {
+            flex: 0 0 68%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        &_short {
+            flex: 0 0 15%;
+            margin-right: 6px;
+            color: $cyan;
+        }
+
+        &_btn {
+            flex: 0 0 10%;
+            margin-top: 6px;
+            margin-right: 21px;
+            
+            button {
+                background-color: $cyan;
+                border-radius: 6px;
+                border: none;
+                padding: 9%;
+                width: 119px;
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+                outline: none;
+            }
+
+            button:active {
+                background-color: $VeryDarkViolet !important;
+            }
+        }
+    }
+
     /* Cards */
 
     #card {

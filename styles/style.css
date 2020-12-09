@@ -244,6 +244,80 @@ body {
     margin-top: 10px;
     font-style: oblique;
   }
+  /* Card result links */
+  #contentResult {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #EFF1F7;
+  }
+  .card_links {
+    background-color: white;
+    width: calc(81% - 30px);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0px;
+    height: calc(90% - 30px);
+    margin-top: 30px;
+  }
+  .card_links_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    width: 100%;
+  }
+  .card_links_original {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 68%;
+            flex: 0 0 68%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .card_links_short {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    margin-right: 6px;
+    color: #2acfcf;
+  }
+  .card_links_btn {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%;
+    margin-top: 6px;
+    margin-right: 21px;
+  }
+  .card_links_btn button {
+    background-color: #2acfcf;
+    border-radius: 6px;
+    border: none;
+    padding: 9%;
+    width: 119px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+  }
+  .card_links_btn button:active {
+    background-color: #232127 !important;
+  }
   /* Cards */
   #card {
     display: -webkit-box;
@@ -628,6 +702,10 @@ body {
     font-size: 16px;
     outline: none;
   }
+  .button_shorten:hover {
+    cursor: pointer;
+    background-color: #75f5f5 !important;
+  }
   #mensajeError {
     color: red;
     margin-right: auto;
@@ -697,6 +775,7 @@ body {
     margin-right: 21px;
   }
   .card_links_btn button {
+    cursor: pointer;
     background-color: #2acfcf;
     border-radius: 6px;
     border: none;
@@ -706,6 +785,16 @@ body {
     font-weight: bold;
     font-size: 16px;
     outline: none;
+  }
+  .card_links_btn button:hover {
+    cursor: pointer;
+    background-color: #75f5f5;
+  }
+  .card_links_btn button:active {
+    background-color: #232127 !important;
+  }
+  .card_links_btn .copied button {
+    background-color: #232127 !important;
   }
   /* Cards */
   #card {

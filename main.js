@@ -21,8 +21,8 @@ const copyShortLink = (shortLink, idBtn) => {
 
     document.execCommand('copy');
     document.body.removeChild(el);
-
-    
+    document.getElementById(`${idBtn}elm`).innerText = 'Copied!';
+    document.getElementById(`${idBtn}elm`).style.cssText = "background-color: hsl(260, 8%, 14%);"
 }
 
 const addShortLinkResult = (resLinks, inputLink) => {
@@ -35,8 +35,6 @@ const addShortLinkResult = (resLinks, inputLink) => {
     inputLink.value = '';
     
     const div = document.createElement('div');
-
-    console.log('->', resLinks);
 
     div.className = 'card_links';
 
@@ -52,13 +50,12 @@ const addShortLinkResult = (resLinks, inputLink) => {
             class="card_links_btn" 
             id="${idBtnCopy}"
         >
-            <button>Copy</button>
+            <button id="${idBtnCopy}elm">Copy</button>
         </div>
     </div>
     `;
 
     document.getElementById('contentResult').appendChild(div);
-            id="${idBtnCopy}"
     document.getElementById(idBtnCopy).setAttribute('onClick',`copyShortLink('${full_short_link2}', '${idBtnCopy}')`);
 };
 

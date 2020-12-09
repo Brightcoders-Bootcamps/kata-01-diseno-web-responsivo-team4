@@ -158,53 +158,6 @@
         font-weight: 600;
     }
 
-
-      .down-footer{
-        background-color: $VeryDarkViolet;
-        display: flex;
-        flex-direction: row;
-        padding: 5% 5% 5% 5%;
-
-        a:hover{
-            color: hsl(180, 66%, 49%);
-        }
-
-        div{
-            a{
-                color:$Gray;
-                
-                line-height: 26px;
-            }
-
-            p{
-            padding: 7px 0 8px 0;
-            color:white;
-            font-weight: bold;
-            }
-            padding-right: 10%;
-        }
-        .test{
-            width: 100%;
-    
-        .imagenes{
-            width: 100%;
-            img{
-                width: 40px;
-                padding: 10px;
-                padding-bottom: 10%;
-                float: right;
-                //background-color: cyan;
-            }
-    
-        }
-       }
-    }
-    
-    
-    
-    .down-footer .logofooter{ //quita el logo
-        display: none;
-=======
     input,
     input[focus] {
         outline: none;
@@ -226,7 +179,7 @@
         color: red;
         margin-right: auto;
         display: none;
-        font-size: 10pt; 
+        font-size: 10pt;
         margin-top: 10px;
         font-style: oblique;
     }
@@ -275,7 +228,8 @@
         h1 {
             font-weight: 700;
             color: $VeryDarkViolet;
-            margin-top: 40px;
+            margin-top: 50px;
+            margin-bottom: -20px;
         }
 
         h5 {
@@ -283,6 +237,14 @@
             font-size: 18px;
             color: $GrayishViolet;
         }
+    }
+
+    .center_card {
+        margin-top: 30px !important;
+    }
+
+    .last_card {
+        margin-top: 60px !important;
     }
 
     .circle_card {
@@ -313,10 +275,60 @@
             width: 19px;
             height: 12px;
             background-color: $cyan;
-
+        }
     }
-    
-    .up-footer{
+
+    //footer
+    .down-footer {
+        background-color: $VeryDarkViolet;
+        display: flex;
+        flex-direction: row;
+        padding: 5% 5% 5% 5%;
+
+        a:hover {
+            color: hsl(180, 66%, 49%);
+        }
+
+        div {
+            a {
+                color: $Gray;
+
+                line-height: 26px;
+            }
+
+            p {
+                padding: 7px 0 8px 0;
+                color: white;
+                font-weight: bold;
+            }
+            padding-right: 10%;
+        }
+        .test {
+            width: 100%;
+
+            .imagenes {
+                width: 100%;
+                img {
+                    width: 40px;
+                    padding: 10px;
+                    padding-bottom: 10%;
+                    float: right;
+                    //background-color: cyan;
+                }
+            }
+        }
+    }
+
+    .down-footer .logofooter {
+        display: none;
+
+        input,
+        input[focus] {
+            outline: none;
+        }
+    }
+
+    .up-footer {
         background-color: $DarkViolet;
         background-image: url(../images/bg-boost-desktop.svg);
         background-repeat: no-repeat;
@@ -325,12 +337,12 @@
         flex-direction: column;
         padding: 5% 0 5% 0;
         text-align: center;
-        color:white;
+        color: white;
         font-weight: bolder;
-    
-        button{
+
+        button {
             padding: 1% 3%;
-            margin-bottom: 30px; 
+            margin-bottom: 30px;
         }
         .btn-menu {
             background-color: $cyan;
@@ -341,63 +353,58 @@
             border-radius: 90px 90px 90px 90px;
             border: none;
         }
-        
+
         .btn-menu:hover {
             opacity: 0.5;
         }
 
+        .up-footer-contenedor {
+            //footer
+            .down-footer {
+                flex-direction: row;
+                padding: 5% 5% 5% 5%;
+                div {
+                    padding-right: 10%;
+                }
+                .test {
+                    width: 100%;
 
-        .up-footer-contenedor{
+                    .imagenes {
+                        float: left;
 
-    //footer
-    .down-footer {
-        flex-direction: row;
-        padding: 5% 5% 5% 5%;
-        div {
-            padding-right: 10%;
-        }
-        .test {
-            width: 100%;
+                        img {
+                            padding-bottom: 10%;
+                            float: right;
+                            //background-color: cyan;
+                        }
+                    }
+                }
+            }
 
-            .imagenes {
-                float: left;
+            .down-footer .logofooter {
+                //quita el logo
+                display: none;
+            }
 
-                img {
-                    padding-bottom: 10%;
-                    float: right;
-                    //background-color: cyan;
+            .up-footer {
+                background-image: url(../images/bg-boost-desktop.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+
+                padding: 5% 0 5% 0;
+                text-align: center;
+                color: white;
+                font-weight: bolder;
+
+                .up-footer-contenedor {
+                    //background-color: darkgreen;
+                    justify-content: left;
+                    align-items: left;
                 }
             }
         }
     }
-
-    .down-footer .logofooter {
-        //quita el logo
-        display: none;
-    }
-
-    .up-footer {
-        background-image: url(../images/bg-boost-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        display: flex;
-        flex-direction: column;
-
-        padding: 5% 0 5% 0;
-        text-align: center;
-        color: white;
-        font-weight: bolder;
-
-        .up-footer-contenedor {
-
-            //background-color: darkgreen;
-            justify-content: left;
-            align-items: left;
-        }
-
-    
-    }
-}   
-    
-
+}

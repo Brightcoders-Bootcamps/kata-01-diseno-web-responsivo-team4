@@ -2,10 +2,9 @@
 var btnBurger = document.getElementById("btnBurger");
 var menuOptions = document.getElementById("menuOptions");
 
-btnBurger.addEventListener("click", function() {
+btnBurger.addEventListener("click", function () {
     menuOptions.classList.toggle("hidden");
 });
-
 
 // shorten link
 var URL_BASE = 'https://api.shrtco.de/v2'
@@ -16,7 +15,7 @@ btnShorten.addEventListener('click', () => {
     console.log(inptShorten.value)
     let link = inptShorten.value;
 
-    if (link == ''){
+    if (!link) {
         var error = document.getElementById('mensajeError');
         error.style.display = 'block';
         return false;

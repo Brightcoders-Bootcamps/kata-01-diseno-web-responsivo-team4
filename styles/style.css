@@ -2,10 +2,7 @@
 /*Primary*/
 /*Secondary*/
 /*Neutral*/
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 body {
   font-family: 'Poppins', sans-serif !important;
   margin: 0;
@@ -365,12 +362,14 @@ body {
     color: #bfbfbf;
     line-height: 30px;
   }
-
   .down-footer div p {
     padding: 10px 0 10px 0;
     color: white;
     font-weight: bold;
-
+  }
+  .down-footer .contacto {
+    background-color: red;
+    text-align: center;
   }
   .down-footer .contacto .imagenes img {
     width: 50px;
@@ -475,9 +474,6 @@ body {
   .btn-login:hover {
     background-color: #80deea;
   }
-  .button_shorten:hover {
-    background-color: #80deea;
-  }
   /* Components header */
   .banner {
     display: -webkit-box;
@@ -529,9 +525,6 @@ body {
     padding: 6% 19%;
     width: 186px;
     z-index: 1;
-  }
-  .banner_button:hover{
-    background-color: #80deea;
   }
   .banner_button_text {
     font-size: 18px;
@@ -692,14 +685,20 @@ body {
   }
   #card2 h1 {
     font-weight: 700;
-
     color: #232127;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: -20px;
   }
   #card2 h5 {
     font-weight: 400;
     font-size: 18px;
     color: #9e9aa7;
+  }
+  .center_card {
+    margin-top: 30px !important;
+  }
+  .last_card {
+    margin-top: 60px !important;
   }
   .circle_card {
     display: -webkit-box;
@@ -740,7 +739,6 @@ body {
     width: 19px;
     height: 12px;
     background-color: #2acfcf;
-
   }
   .down-footer {
     background-color: #232127;
@@ -783,6 +781,10 @@ body {
   .down-footer .logofooter {
     display: none;
   }
+  .down-footer .logofooter input,
+  .down-footer .logofooter input[focus] {
+    outline: none;
+  }
   .up-footer {
     background-color: #3b3054;
     background-image: url(../images/bg-boost-desktop.svg);
@@ -816,7 +818,46 @@ body {
   .up-footer .btn-menu:hover {
     opacity: 0.5;
   }
-  .up-footer .up-footer-contenedor {
+  .up-footer .up-footer-contenedor .down-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 5% 5% 5% 5%;
+  }
+  .up-footer .up-footer-contenedor .down-footer div {
+    padding-right: 10%;
+  }
+  .up-footer .up-footer-contenedor .down-footer .test {
+    width: 100%;
+  }
+  .up-footer .up-footer-contenedor .down-footer .test .imagenes {
+    float: left;
+  }
+  .up-footer .up-footer-contenedor .down-footer .test .imagenes img {
+    padding-bottom: 10%;
+    float: right;
+  }
+  .up-footer .up-footer-contenedor .down-footer .logofooter {
+    display: none;
+  }
+  .up-footer .up-footer-contenedor .up-footer {
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5% 0 5% 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+  }
+  .up-footer .up-footer-contenedor .up-footer .up-footer-contenedor {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;

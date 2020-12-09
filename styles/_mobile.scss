@@ -202,7 +202,7 @@
         color: red;
         margin-right: auto;
         display: none;
-        font-size: 10pt; 
+        font-size: 10pt;
         margin-top: 10px;
         font-style: oblique;
     }
@@ -297,9 +297,8 @@
         padding: 10% 0 10% 0;
         text-align: center;
 
-        a:hover{
+        a:hover {
             color: hsl(180, 66%, 49%);
-
         }
 
         .logofooter {
@@ -307,22 +306,19 @@
             align-self: center;
         }
 
+        div a {
+            color: $Gray;
 
-        div a{
-            color:$Gray;
-            
             line-height: 30px;
-           
         }
-        div p{
+        div p {
             padding: 10px 0 10px 0;
-            color:white;
+            color: white;
             font-weight: bold;
         }
-]
 
         /*Footer */
-      
+
         .contacto {
             background-color: red;
             text-align: center;
@@ -361,14 +357,10 @@
         text-align: center;
         color: white;
         font-weight: bolder;
-    
+
         button {
             padding: 2% 30%;
             margin-bottom: 30px;
         }
     }
-
-    
-
-    }
-
+}

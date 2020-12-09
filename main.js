@@ -1,12 +1,34 @@
 // Id's boton hamburguesa
 var btnBurger = document.getElementById("btnBurger");
 var menuOptions = document.getElementById("menuOptions");
+var countNewElemnt = 0;
 
 btnBurger.addEventListener("click", function () {
     menuOptions.classList.toggle("hidden");
 });
 
+const copyShortLink = (shortLink, idBtn) => {
+    let el = document.createElement('input');
+    
+    el.value = shortLink;
+    
+    el.setAttribute('readonly', '');
+    el.style = { display: 'none' };
+    
+    document.body.appendChild(el);
+    
+    el.select();
+
+    document.execCommand('copy');
+    document.body.removeChild(el);
+
+    
+}
+
 const addShortLinkResult = (resLinks, inputLink) => {
+    countNewElemnt++;
+
+    let idBtnCopy = 'btnCopyLink'+countNewElemnt;
     let original_link = resLinks.original_link;
     let full_short_link2 = resLinks.full_short_link2;
 
@@ -26,13 +48,18 @@ const addShortLinkResult = (resLinks, inputLink) => {
         <div class="card_links_short">
             <p>${full_short_link2}</p>
         </div>
-        <div class="card_links_btn">
+        <div 
+            class="card_links_btn" 
+            id="${idBtnCopy}"
+        >
             <button>Copy</button>
         </div>
     </div>
     `;
 
     document.getElementById('contentResult').appendChild(div);
+            id="${idBtnCopy}"
+    document.getElementById(idBtnCopy).setAttribute('onClick',`copyShortLink('${full_short_link2}', '${idBtnCopy}')`);
 };
 
 // shorten link

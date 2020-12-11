@@ -68,6 +68,16 @@ btnShorten.addEventListener('click', () => {
     console.log(inptShorten.value)
     let link = inptShorten.value;
 
+    if(link === '' || link == null){
+            document.getElementById("inptShorten").style.color = 'hsl(0, 73%, 89%)';
+            document.getElementById("inptShorten").style.border = '3px solid hsl(0, 87%, 67%)';
+    } 
+    
+    else {
+            document.getElementById("inptShorten").style.color = 'hsl(0, 3%, 69%)';
+            document.getElementById("inptShorten").style.border = '0px solid #FFFFFF';
+    }
+
     if (!link) {
         var error = document.getElementById('mensajeError');
         error.style.display = 'block';

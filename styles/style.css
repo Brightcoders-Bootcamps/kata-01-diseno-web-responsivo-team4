@@ -262,8 +262,7 @@ body {
   }
   .card_links {
     background-color: white;
-    width: calc(93% - 30px);
-    padding: 10px;
+    width: calc(98% - 30px);
     border-radius: 6px;
     margin: 0px;
     height: calc(90% - 30px);
@@ -283,19 +282,27 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 68%;
             flex: 0 0 68%;
+    border-bottom: 1px solid #bfbfbf;
+    padding: 0px 10px;
+  }
+  .card_links_original p {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .card_links_short {
     color: #2acfcf;
+    padding: 0px 10px;
   }
   .card_links_btn {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 10%;
             flex: 0 0 10%;
-    margin-top: 6px;
     margin-right: 21px;
+    padding: 10px;
   }
   .card_links_btn button {
-    background-color: #2acfcf;
     border-radius: 6px;
     border: none;
     padding: 4%;
@@ -306,7 +313,17 @@ body {
     outline: none;
   }
   .card_links_btn button:active {
-    background-color: #232127 !important;
+    background-color: #232127;
+  }
+  .copy-button {
+    background-color: #2acfcf;
+  }
+  .copy-button:hover {
+    cursor: pointer;
+    background-color: #75f5f5;
+  }
+  .copied-button {
+    background-color: #232127;
   }
   /* Cards */
   #card {
@@ -558,7 +575,7 @@ body {
     font-size: 19px;
     width: 36%;
     height: 474px;
-    margin-left: 6%;
+    margin-left: 11%;
   }
   .banner_title_fst {
     font-size: 42px;
@@ -599,7 +616,7 @@ body {
   }
   .banner_img {
     background-image: url("../images/illustration-working.svg");
-    background-position: 9em 0;
+    background-position: 8em 0;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -694,7 +711,7 @@ body {
   }
   .button_shorten:hover {
     cursor: pointer;
-    background-color: #75f5f5 !important;
+    background-color: #75f5f5;
   }
   #mensajeError {
     color: red;
@@ -766,7 +783,6 @@ body {
   }
   .card_links_btn button {
     cursor: pointer;
-    background-color: #2acfcf;
     border-radius: 6px;
     border: none;
     padding: 9%;
@@ -776,15 +792,18 @@ body {
     font-size: 16px;
     outline: none;
   }
-  .card_links_btn button:hover {
+  .card_links_btn button:active {
+    background-color: #232127;
+  }
+  .copy-button {
+    background-color: #2acfcf;
+  }
+  .copy-button:hover {
     cursor: pointer;
     background-color: #75f5f5;
   }
-  .card_links_btn button:active {
-    background-color: #232127 !important;
-  }
-  .card_links_btn .copied button {
-    background-color: #232127 !important;
+  .copied-button {
+    background-color: #232127;
   }
   /* Cards */
   #card {
@@ -831,7 +850,6 @@ body {
     width: calc(26% - 30px);
     padding: 10px;
     border-radius: 6px;
-    margin: 0px;
     height: calc(90% - 30px);
   }
   #card2 h1 {
@@ -846,10 +864,10 @@ body {
     color: #9e9aa7;
   }
   .center_card {
-    margin-top: 30px !important;
+    margin-top: 30px;
   }
   .last_card {
-    margin-top: 60px !important;
+    margin-top: 60px;
   }
   .circle_card {
     display: -webkit-box;

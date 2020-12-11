@@ -9,6 +9,7 @@ btnBurger.addEventListener("click", function () {
 
 const copyShortLink = (shortLink, idBtn) => {
     let el = document.createElement('input');
+    let idButtonCopy = document.getElementById(`${idBtn}elm`);
     
     el.value = shortLink;
     
@@ -21,8 +22,10 @@ const copyShortLink = (shortLink, idBtn) => {
 
     document.execCommand('copy');
     document.body.removeChild(el);
-    document.getElementById(`${idBtn}elm`).innerText = 'Copied!';
-    document.getElementById(`${idBtn}elm`).style.cssText = "background-color: hsl(260, 8%, 14%);"
+
+    idButtonCopy.innerText = 'Copied!';
+    idButtonCopy.classList.remove("copy-button");
+    idButtonCopy.classList.add("copied-button");
 }
 
 const addShortLinkResult = (resLinks, inputLink) => {
@@ -50,7 +53,7 @@ const addShortLinkResult = (resLinks, inputLink) => {
             class="card_links_btn" 
             id="${idBtnCopy}"
         >
-            <button id="${idBtnCopy}elm">Copy</button>
+            <button id="${idBtnCopy}elm" class="copy-button">Copy</button>
         </div>
     </div>
     `;
@@ -65,7 +68,6 @@ var inptShorten = document.getElementById('inptShorten');
 var btnShorten = document.getElementById('btnShorten');
 
 btnShorten.addEventListener('click', () => {
-    console.log(inptShorten.value)
     let link = inptShorten.value;
 
     if(link === '' || link == null){

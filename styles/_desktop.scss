@@ -65,7 +65,7 @@
             font-size: 19px;
             width: 36%;
             height: 474px;
-            margin-left: 6%;
+            margin-left: 11%;
         }
 
         &_title_fst {
@@ -106,7 +106,7 @@
 
     .banner_img {
         background-image: url("../images/illustration-working.svg");
-        background-position: 9em 0;
+        background-position: 8em 0;
         background-repeat: no-repeat;
         background-size: cover;
         width: 50%;
@@ -177,7 +177,7 @@
 
     .button_shorten:hover {
         cursor: pointer;
-        background-color: #75f5f5 !important;
+        background-color: #75f5f5;
     }
 
     #mensajeError {
@@ -234,7 +234,6 @@
             
             button {
                 cursor: pointer;
-                background-color: $cyan;
                 border-radius: 6px;
                 border: none;
                 padding: 9%;
@@ -245,22 +244,23 @@
                 outline: none;
             }
 
-            button:hover {
-                cursor: pointer;
-                background-color: #75f5f5;
-            }
-
             button:active {
-                background-color: $VeryDarkViolet !important;
-            }
-
-            .copied {
-
-                button {
-                    background-color: $VeryDarkViolet !important;
-                }
+                background-color: $VeryDarkViolet;
             }
         }
+    }
+
+    .copy-button {
+        background-color: $cyan;
+    }
+
+    .copy-button:hover {
+        cursor: pointer;
+        background-color: #75f5f5;
+    }
+
+    .copied-button {
+        background-color: hsl(260, 8%, 14%);
     }
 
     /* Cards */
@@ -301,7 +301,7 @@
         width: calc(26% - 30px);
         padding: 10px;
         border-radius: 6px;
-        margin: 0px;
+        //margin: 0px;
         height: calc(90% - 30px);
 
         h1 {
@@ -319,11 +319,11 @@
     }
 
     .center_card {
-        margin-top: 30px !important;
+        margin-top: 30px;
     }
 
     .last_card {
-        margin-top: 60px !important;
+        margin-top: 60px;
     }
 
     .circle_card {

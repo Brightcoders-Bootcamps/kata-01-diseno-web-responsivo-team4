@@ -207,8 +207,8 @@
     }
 
     /* Card result links */
-    
-    #contentResult{
+
+    #contentResult {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -241,7 +241,6 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            
         }
 
         &_short {
@@ -253,7 +252,7 @@
             flex: 0 0 10%;
             margin-right: 21px;
             padding: 10px;
-            
+
             button {
                 border-radius: 6px;
                 border: none;
@@ -370,19 +369,15 @@
         background-color: $VeryDarkViolet;
         display: flex;
         flex-direction: column;
-
         padding: 10% 0 10% 0;
         text-align: center;
-
         a:hover {
             color: hsl(180, 66%, 49%);
         }
-
         .logofooter {
             filter: hue-rotate(100deg) brightness(1000%);
-            align-self: center;
+            padding-left: 30px;
         }
-
         div a {
             color: $Gray;
 
@@ -393,36 +388,18 @@
             color: white;
             font-weight: bold;
         }
+        .imagenes {
+            padding-top: 10%;
+            width: 100%;
 
-        /*Footer */
+            img {
+                flex: auto;
+                margin: 0 5% 0 0;
 
-        .contacto {
-            background-color: red;
-            text-align: center;
-        }
-        .contacto .imagenes img {
-            width: 50px;
-            height: 50px;
-        }
-    }
-    .imagenes {
-        //background-color: lightgreen;
-        padding-top: 10%;
-        width: 100%;
-
-        img {
-            flex: auto;
-            margin: 0 5% 0 0;
-            //background-color: red;
-            height: 80%;
-        }
-        :hover {
-            //pendiente - cambiar colores
-            //blalbalba
-            color: red;
+                height: 80%;
+            }
         }
     }
-
     .up-footer {
         background-color: $DarkViolet;
         background-image: url(../images/bg-boost-mobile.svg);
@@ -434,9 +411,15 @@
         text-align: center;
         color: white;
         font-weight: bolder;
-
+    }
+    .up-footer-contenedor {
+        p {
+            font-size: 170%;
+        }
         button {
-            padding: 2% 30%;
+            height: 40%;
+            width: 60%;
+            font-size: 100%;
             margin-bottom: 30px;
         }
     }
